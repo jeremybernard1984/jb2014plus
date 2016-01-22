@@ -1,0 +1,220 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;    
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#fff;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+@font-face {
+    font-family: 'CodeProDemoRegular';
+    src: url('../fonts/Code_Pro_Demo-webfont.eot');
+    src: url('../fonts/Code_Pro_Demo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Code_Pro_Demo-webfont.woff') format('woff'),
+         url('../fonts/Code_Pro_Demo-webfont.ttf') format('truetype'),
+         url('../fonts/Code_Pro_Demo-webfont.svg#CodeProDemoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'CodeProLightDemoRegular';
+    src: url('../fonts/Code_Pro_Light_Demo-webfont.eot');
+    src: url('../fonts/Code_Pro_Light_Demo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Code_Pro_Light_Demo-webfont.woff') format('woff'),
+         url('../fonts/Code_Pro_Light_Demo-webfont.ttf') format('truetype'),
+         url('../fonts/Code_Pro_Light_Demo-webfont.svg#CodeProLightDemoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: 'CodeProLightDemoRegular';
+	color: #333;
+	color: rgba(0,0,0,0.5);
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+
+
+
+
+h1{
+	font-size: 2em;font-weight:normal;letter-spacing:0.5em;line-height:2em;
+}
+p{
+	font-size: 1em;color: #ccc;font-weight:normal;font-family: verdana;
+}
+p a{
+	color: #fff;text-decoration:underline;font-size: 1.2em;
+}
+p a:hover{
+	color: #eee;text-decoration:underline;font-size: 1.2em;
+}
+.section{
+	text-align:center;
+}
+
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 20px; 
+            border-radius: 20px; 
+	font-family: 'CodeProDemoRegular';
+}
+#menu li.active{
+	background:#fff;
+	color: #000;
+}
+#menu li a{
+	text-decoration:none;
+	color: #fff;
+}
+#menu li.active a:hover{
+	color: #fff;
+}
+#menu li:hover{
+	background: #000;
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 9px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position:fixed;
+	top:10%;
+	right:50px;
+	height: 400px;
+	z-index: 70;
+	width: 25px;
+	padding: 0;
+	position:fixed;margin:0 0 0  0;font-size: 0.7em;
+}
+#section0 img,
+#section1 img{
+	margin: 20px 0 0 0;
+}	
+#section2 img{
+	margin: 20px 0 0 52px;	
+}
+#section3 img{
+	bottom: 0px;
+	position:absolute;
+	margin-left: -420px;
+}
+.intro p{
+	width: 50%;
+	margin: 0 auto;
+	color:#111;font-size:0.8em;line-height:2em;
+}
+.twitter-share-button{
+	position: absolute;
+	z-index: 99;
+	right: 149px;
+	top: 9px;
+}
+#fullPage-nav{
+	position: absolute;
+	z-index: 100;
+	margin-top: -32px;
+	top: 50%;
+	opacity: 1;
+}
+#fullPage-nav li{
+	display: block;
+	width: 14px;
+	height: 13px;
+	margin: 7px;
+}
+#fullPage-nav li a{
+	display: block;
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	text-decoration: none;
+}
+#fullPage-nav li .active span{
+	background: #333;
+}
+#fullPage-nav span{
+	top: 2px;
+	left: 2px;
+	width: 8px;
+	height: 8px;
+	border: 1px solid #000;
+	background: rgba(0, 0, 0, 0);
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 1;
+}
+
+.bloc_lien1 {width:176px;height:176px;margin-left: auto;margin-right: auto;margin-bottom:20px;
+	}
+a .bloc_lien1 {background:url(../images/1.png) 0 0 no-repeat;display:inline-block;width:176px;height:176px;}
+a:hover .bloc_lien1 {background:url(../images/1.png) -176px 0 no-repeat;}
+
+.bloc_lien2 {width:176px;height:176px;margin-left: auto;margin-right: auto;margin-bottom:20px;
+	}
+a .bloc_lien2 {background:url(../images/2.png) 0 0 no-repeat;display:inline-block;width:176px;height:176px;}
+a:hover .bloc_lien2 {background:url(../images/2.png) -176px 0 no-repeat;}
+
+.bloc_lien3 {width:176px;height:176px;margin-left: auto;margin-right: auto;margin-bottom:20px;
+	}
+a .bloc_lien3 {background:url(../images/3.png) 0 0 no-repeat;display:inline-block;width:176px;height:176px;}
+a:hover .bloc_lien3 {background:url(../images/1.png) -176px 0 no-repeat;}
